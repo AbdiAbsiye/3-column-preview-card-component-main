@@ -11,24 +11,33 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   .container{
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align:center;
     text-align: justify;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 3rem;
     max-width: 100%;
+
      
   }
-  @media(max-width:767px) and (Min-width:320px){
+  .Sedans-container,
+       .suvs-container,
+        .luxury-container{
+        max-width: 200px;
+       }
+
+  @media(max-width:767px){
        .container{
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
         
        }
        .Sedans-container,
        .suvs-container,
         .luxury-container{
-        max-width: 350px;
+        max-width: 200px;
        }
     }
   .Sedans-container{
